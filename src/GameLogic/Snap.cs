@@ -79,7 +79,7 @@ namespace CardGames.GameLogic
 		/// <value><c>true</c> if this instance is started; otherwise, <c>false</c>.</value>
 		public bool IsStarted
 		{
-			get { return true; }//_started; }
+			get { return _started; }
 		}
 
 		/// <summary>

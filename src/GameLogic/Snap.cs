@@ -78,7 +78,7 @@ namespace CardGames.GameLogic
 		/// <value><c>true</c> if this instance is started; otherwise, <c>false</c>.</value>
 		public bool IsStarted
 		{
-			get { return _started; }
+			get { return true; }//_started; }
 		}
 
 		/// <summary>
@@ -139,6 +139,10 @@ namespace CardGames.GameLogic
 			{
 				_score[player]++;
 				//TODO: consider playing a sound here...
+			}
+
+			else if (player >= 0 && player < _score.Length) {
+				_score [player]--;
 			}
 
 			// stop the game...

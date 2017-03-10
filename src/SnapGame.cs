@@ -71,6 +71,7 @@ namespace CardGames
 
         public static void Main()
         {
+			SwinGame.LoadSoundEffectNamed ("Slap", "error.wav");
             //Open the game window
             SwinGame.OpenGraphicsWindow("Snap!", 860, 500);
 

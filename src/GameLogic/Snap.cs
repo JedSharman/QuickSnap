@@ -132,13 +132,13 @@ namespace CardGames.GameLogic
 		/// </summary>
 		public void PlayerHit (int player)
 		{
+			SwinGame.PlaySoundEffect ("Slap");
 			//TODO: consider deducting score for miss hits???
 			if ( player >= 0 && player < _score.Length &&  	// its a valid player
 				 IsStarted && 								// and the game is started
 				 _topCards [0] != null && _topCards [0].Rank == _topCards [1].Rank) // and its a match
 			{
 				_score[player]++;
-				SwinGame.PlaySoundEffect ("Slap");
 			}
 
 			else if (player >= 0 && player < _score.Length) {
